@@ -1,112 +1,59 @@
 | [home page](https://cmustudent.github.io/tswd-portfolio-templates/) | [data viz examples](dataviz-examples) | [critique by design](critique-by-design) | [final project I](final-project-part-one) | [final project II](final-project-part-two) | [final project III](final-project-part-three) |
 
-# TSWD-portfolio-templates
-These portfolio templates are for setting up your Telling Stories with Data site.  Edit these pages and add new ones as needed.   
-It's always helpful to keep track of your web URL.  Consider putting that somewhere on your page for easy reference: 
+# Wenjia's Data Stories 🩵
+Welcome to my portfolio for **Telling Stories with Data** at Carnegie Mellon University—a space to explore, experiment, and learn to communicate through visualization.
 
-- Web page URL: https://cmustudent.github.io/tswd-portfolio-templates/
-- This repository: https://github.com/cmustudent/tswd-portfolio-templates/
+## About me 📷
 
-# Portfolio
-This is my public portfolio for Telling Stories with Data at CMU!  Here's where all my cool work will go.  You should probably hire me. 
+Hi, I'm Wenjia Jian! I'm a Master of Information Systems Management student on the Business Intelligence and Data Analytics track at Carnegie Mellon University. I'm interested in using data to understand how people behave and what shapes their everyday decisions.
 
-# About me
-Hi!  I really like data.  And I like visualizations.  So I guess you can say that I like data visualizations!
+Outside the classroom, I enjoy photography and traveling. I love noticing small details, exploring unfamiliar places, and seeing things from different perspectives. With photography, I think about what to include in the frame; with data, I'm learning how to decide what deserves attention.
 
-# What I hope to learn
-All the things - obviously. Maybe I want to make a list of all the things.  If so, I can do so in Markdown like this: 
+## What I hope to learn 🎨
 
-1. List item #1
-2. List item #2
-3. List item #3
+I see this course as my introduction to design. I want to move beyond making charts that simply work and learn to make them visually appealing, thoughtful, and easy to understand. I'm especially interested in how color, typography, and layout can guide a reader's attention and bring a story into focus.
 
-or...
+After graduation, I hope to work in data or business analytics in the technology industry. I want to become better at explaining my findings to people with different backgrounds, so that the insights I discover are useful beyond the analysis itself.
 
-- List item #1
-- List item #2
-- List item #3
+## Portfolio 📊
 
-# Portfolio
+This section will grow throughout the course as I apply what I learn and develop my own approach to visual storytelling.
 
-# Examples
-You can keep this section for stuff from in-class demos or your other work, or remove it. 
+### Data Visualization Examples
 
-## Assignment: [Visualizing overnment Debt](visualizing-government-debt)
-For this assignment, make sure you set up and link to a new page.  This page is linking to a new Markdown document called `visualizing-government-debt.md`.  For links to Markdown files in your repository, you can just include the name of the page without the `.md` extension. 
+Experiments and practice from class.
 
-## Assignment 3&4: [Critique by Design](critique-by-design)
-For this assignment, make sure you set up and link to a new page.  This page is linking to a new Markdown document called `critique-by-design.md`.  
+[Explore my examples →](dataviz-examples)
 
-## Final project
-Here it might be helpful to include a high-level description of your final project. 
-[Part I](final-project-part-one)
-[Part II](final-project-part-two)
-Part III(final-project-part-three)
+### Assignment: Visualizing Government Debt
+
+Exploring how different visualization choices shape our understanding of government debt.
+
+[View assignment →](visualizing-government-debt)
+
+### Assignments 3 & 4: Critique by Design
+
+Evaluating an existing visualization and redesigning it to communicate more clearly.
+
+[View assignment →](critique-by-design)
+
+### Final Project: Social Media
+
+**An initial idea: exploring the stories behind our scrolling.**
+
+For my final project, I'm interested in exploring social media platforms such as Instagram and TikTok. Possible directions include how people spend their time on these platforms, what kinds of content attract engagement, and how usage patterns differ across audiences.
+
+The topic is still taking shape. I'll refine my research question as I explore available datasets and decide which story I want to tell.
+
+- [Part I →](final-project-part-one)
+- [Part II →](final-project-part-two)
+- [Part III →](final-project-part-three)
 
 ---
-## Other stuff you can do (you can remove this section - it's just for your reference.)
-
-### Changing text
-
-You can change text, like this: 
-
-**Here's some bold** text.  Here's some *italic* text. Here's some ~~strikethrough~~ text. 
-
-### Creating tables
-
-You can build tables like this: 
-
-| Name         | Type of pet | Favority activity 1 | FA 2   | FA 3            | FA 4                                |
-|--------------|-------------|---------------------|--------|-----------------|-------------------------------------|
-| Eli          | cat         | Sleeping            | Eating | Being pet       | Plotting to overthow dog empire     |
-| Howard       | dog         | You                 | You    | You             | Eating                              |
-| Frankenstein | fish        | Swimming            | Eating | Blowing bubbles | Forgetting                          |
-
-An easy-to-use template generator tool [can be found here](https://www.tablesgenerator.com/markdown_tables)
-
-You can use different headings, like this: 
-
-# Here's a large title (H1)
-## Here's a subtitle (H2)
-### ...and so on (H3)
-You get the idea - just don't forget the space between the # and your title.  `#Title` won't work, but `# Title` will. 
-
-### Adding images
-
-Here's an example of how to add an image to my portfolio.  
-
-![funny dog picture](funny-dog-unsplash.jpg)
-> Photo by <a href="https://unsplash.com/pt-br/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a> on <a href="https://unsplash.com/photos/K4mSJ7kc0As?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-
-Alternately, you can set the size of the image using just a bit of HTML: 
-
-<img src="funny-dog-unsplash.jpg" width="200"/>
-
-Remember that you'll need to upload the image into your repository, or include a link to the image somewhere else.  
-
-### Setting up a separate page
-
-So here's the code you'll need to add to your own site to create a second page. 
-
-1. First, create a new page in your repository (for example, dataviz1.md)
-2. Next, add a link to that page by inserting the following into your readme.md page:
-
-`[title](dataviz)` or `[dataviz](https://cmustudent.github.io/portfolio/dataviz.html)` or `[CMU](https://www.cmu.edu)`
-
-Any of those formats will work. Here's some examples of working links: 
-
-`[title](dataviz)` = [title](dataviz)  
-`[dataviz](https://cmustudent.github.io/portfolio/dataviz.html)` = [dataviz](https://cmustudent.github.io/portfolio/dataviz.html)  
-`[CMU](https://www.cmu.edu)` = [CMU](https://www.cmu.edu)   
-
-Make sure to check these from your publicly accessible URL to make sure they're working correctly (not from the preview tab). 
-
-Looking for more?  A nice Markdown guide [can be found here](https://www.markdownguide.org/cheat-sheet/)
 
 ## References
-_List any references you used here._
+__
 
 ## AI acknowledgements
-_If you used AI to help you complete this assignment (within the parameters of the instruction and course guidelines), detail your use of AI for this assignment here._
+I used ChatGPT to help organize the Markdown structure.
 
