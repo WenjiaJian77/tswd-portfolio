@@ -68,16 +68,49 @@ The layout suggestion also gave the four panels a clearer organization. Placing 
 
 I completed the redesign in a single Tableau worksheet using four horizontal bar-chart panels.
 
-<div class='tableauPlaceholder' id='viz1794361399055' style='position: relative'><noscript><a href='#'><img alt='Pet ownership across 22 countries and regionsPercentage of respondents who have each pet type in their household, 2016.Sorted by percentage within each pet type. ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;Pet_17939993738590&#47;FinalRedesign&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Pet_17939993738590&#47;FinalRedesign' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;Pet_17939993738590&#47;FinalRedesign&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object>
+<div style="width:100%; overflow-x:auto;">
+<div class="tableauPlaceholder" id="viz1794361399055" style="position:relative; width:1500px;">
+  <noscript>
+    <a href="https://public.tableau.com/views/Pet_17939993738590/FinalRedesign">
+      <img
+        alt="Pet ownership across 22 countries and regions, 2016."
+        src="https://public.tableau.com/static/images/Pe/Pet_17939993738590/FinalRedesign/1_rss.png"
+        style="border:none;"
+      />
+    </a>
+  </noscript>
+  <object class="tableauViz" style="display:none;">
+    <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+    <param name="embed_code_version" value="3" />
+    <param name="site_root" value="" />
+    <param name="name" value="Pet_17939993738590/FinalRedesign" />
+    <param name="tabs" value="no" />
+    <param name="toolbar" value="yes" />
+    <param name="static_image" value="https://public.tableau.com/static/images/Pe/Pet_17939993738590/FinalRedesign/1.png" />
+    <param name="animate_transition" value="yes" />
+    <param name="display_static_image" value="yes" />
+    <param name="display_spinner" value="yes" />
+    <param name="display_overlay" value="yes" />
+    <param name="display_count" value="yes" />
+    <param name="language" value="en-US" />
+  </object>
 </div>
-<script type='text/javascript'>
+</div>
+
+<script type="text/javascript">
   var divElement = document.getElementById('viz1794361399055');
   var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+
+  divElement.style.width = '1500px';
+  vizElement.style.width = '1500px';
+  vizElement.style.height = '1800px';
+
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
+
+[Open the visualization on Tableau Public](https://public.tableau.com/views/Pet_17939993738590/FinalRedesign)
 
 The final design uses the title **“Pet ownership across 22 countries and regions.”** Its subtitle explains that the values are the percentages of respondents who have each pet type in their household and that the observations are sorted within each pet category.
 
