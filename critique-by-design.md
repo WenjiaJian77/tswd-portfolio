@@ -18,15 +18,11 @@ The original infographic caught my attention through its pet icons, colors, and 
 
 ## Step two: the critique
 
-I completed the Google Form using Stephen Few’s Data Visualization Effectiveness Profile. The framework helped me consider usefulness, completeness, perceptibility, truthfulness, intuitiveness, aesthetics, and engagement separately.
-
 The original visualization has several strengths. Its pet icons make the categories recognizable, its numerical labels provide exact percentages, and its source information gives readers context. The central summary percentages also offer a starting point for understanding the overall picture. I interpreted its primary audience as pet-industry marketers, retailers, and consumer researchers, with general readers as a secondary audience.
 
 However, the design functions more like an illustrated table than a chart that supports quick comparisons. The central globe occupies considerable space without showing the locations of individual observations. Countries are not ordered by ownership percentage, so readers must search for the largest values. The different arrangements of country names and percentages on the two sides also interrupt the reading flow.
 
 I also wanted the meaning of the percentages to be more prominent. They describe respondents reporting a particular pet type in their household, rather than the number of pets owned. The survey context and the calculation of the overall averages are not easy to assess from the main graphic alone. For professional readers, the data provide an overview, but they do not establish market size or spending potential.
-
-Using Few’s framework helped me distinguish an attractive presentation from an effective comparison tool. Compared with my earlier Good Charts exercises, it encouraged a more systematic review of individual design qualities. However, the categories sometimes overlap, and ratings still depend on the evaluator’s judgment. I therefore treated the critique as a starting point and used peer feedback to learn how other people actually interpreted my redesign.
 
 ## Step three: Sketch a solution
 
@@ -38,13 +34,11 @@ I built the sketch in a single Tableau worksheet. Each panel represented one pet
 
 ![Tableau sketch showing four independently sorted pet ownership charts](Pet%20Ownership%202x2.png)
 
-This sketch narrowed my main question to: **How does the United States compare with the leading countries and regions for each pet type?**
-
-Independent sorting supported that question, although it introduced a tradeoff: the same country would appear in a different position in each panel. Direct country labels helped readers locate individual observations.
+This sketch showed my main question is **How does the United States compare with the leading countries and regions for each pet type?**
 
 ## Step four: Test the solution
 
-I shared my sketch with three classmates during an informal classroom discussion. They looked directly at the visualization, asked questions, and suggested changes. I did not conduct a scripted interview or collect timed task results, so the table below summarizes the feedback they actually provided rather than reconstructing answers to a questionnaire.
+I shared my sketch with three classmates during class discussion. They looked directly at the visualization, asked questions, and suggested changes. I did not conduct a scripted interview or collect timed task results, so the table below summarizes the feedback they actually provided rather than reconstructing answers to a questionnaire.
 
 All three classmates said the overall information was clear and recognized that the visualization emphasized the United States. Their suggestions focused on wording, readability, layout, and emphasis.
 
@@ -58,11 +52,7 @@ All three classmates said the overall information was clear and recognized that 
 
 ### Synthesis
 
-The feedback suggested that the main visual emphasis was working: readers could identify the focus on the United States. The remaining problems concerned how easily they could read and interpret the supporting information.
-
-A recurring lesson was that wording matters as much as chart structure. Replacing “ranked” with “sorted” described the display more precisely, and clarifying the percentage definition reduced ambiguity. Larger text and fewer repeated numerical labels improved readability.
-
-The layout suggestion also gave the four panels a clearer organization. Placing dogs and cats together grouped the two categories with generally higher ownership percentages, while fish and birds formed the second column. Bold labels added emphasis to the leading observations.
+The feedback suggested that the main visual emphasis was working: readers could identify the focus on the United States. The remaining problems concerned how easily they could read and interpret the supporting information. Replacing “ranked” with “sorted” described the display more precisely, and clarifying the percentage definition reduced ambiguity. Larger text and fewer repeated numerical labels improved readability. The layout suggestion also gave the four panels a clearer organization. Placing dogs and cats together grouped the two categories with generally higher ownership percentages, while fish and birds formed the second column. Bold labels added emphasis to the leading observations.
 
 ## Step five: build the solution
 
@@ -112,8 +102,6 @@ Each panel uses the same horizontal scale and a zero baseline, allowing bar leng
 
 Blue highlights the top three positions, including ties, and red consistently identifies the United States. The U.S. cat label includes “Top 3” because it belongs to both groups. The other U.S. labels do not include that designation. I also enlarged the text and made the top-three labels bold in response to the classroom feedback.
 
-I did not retain the average reference lines considered during sketching. The final design focuses on identifying the leaders and locating the United States within each category.
-
 ### What the redesign shows
 
 - **Dogs:** Argentina leads at 66%, followed by Mexico at 64% and Brazil at 58%. The United States is fourth at 50%.
@@ -127,11 +115,7 @@ These comparisons show that the United States is relatively close to the leaders
 
 The most useful change was moving from a decorative arrangement of percentages to independently sorted bars. This made the leading observations easier to locate while retaining the broader international context. Classroom feedback then helped me refine the language, typography, and panel arrangement.
 
-There are still tradeoffs. Independent sorting makes it harder to follow a country across all four panels, and the pale gray labels may be difficult to read at smaller display sizes. A future revision could increase the contrast of those labels while preserving the emphasis on the United States and the leading observations. I have not conducted a second round of testing on the final version.
-
-The data also require careful interpretation. The source describes a 2016 survey of more than 27,000 internet users aged 15 and older across 22 markets. These figures are historical survey results, not current estimates for every resident or household. Respondents could report multiple pet types, so the percentages should not be expected to sum to 100%. They describe the presence of a pet type in the household, not the number of animals owned.
-
-The working dataset used for this redesign records Hong Kong’s bird ownership at 5%, whereas the original infographic displays 3%. This discrepancy remains in the final chart.
+There are still tradeoffs. Independent sorting makes it harder to follow a country across all four panels, and the pale gray labels may be difficult to read at smaller display sizes. A future revision could increase the contrast of those labels while preserving the emphasis on the United States and the leading observations.
 
 Overall, this process taught me that a redesign involves more than selecting a different chart type. It also requires deciding which comparisons matter, defining the metric clearly, and checking whether readers notice the intended emphasis.
 
