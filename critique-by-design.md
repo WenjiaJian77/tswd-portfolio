@@ -36,7 +36,7 @@ I initially considered using a common country order across all four pet categori
 
 I built the sketch in a single Tableau worksheet. Each panel represented one pet type, with countries and regions sorted from the highest to the lowest percentage. I used blue to highlight the top three positions, red to highlight the United States, and gray for the remaining observations. Where the United States also belonged to the top three, its red color took priority.
 
-![Tableau sketch showing four independently sorted pet ownership charts](Pet.png)
+![Tableau sketch showing four independently sorted pet ownership charts](Pet%20Ownership%202x2.png)
 
 This sketch narrowed my main question to: **How does the United States compare with the leading countries and regions for each pet type?**
 
