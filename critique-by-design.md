@@ -68,46 +68,40 @@ The layout suggestion also gave the four panels a clearer organization. Placing 
 
 I completed the redesign in a single Tableau worksheet using four horizontal bar-chart panels.
 
-<div style="width:100%; overflow-x:auto;">
-<div class="tableauPlaceholder" id="viz1794361399055" style="position:relative; width:1500px;">
-  <noscript>
-    <a href="https://public.tableau.com/views/Pet_17939993738590/FinalRedesign">
-      <img
-        alt="Pet ownership across 22 countries and regions, 2016."
-        src="https://public.tableau.com/static/images/Pe/Pet_17939993738590/FinalRedesign/1_rss.png"
-        style="border:none;"
-      />
-    </a>
-  </noscript>
-  <object class="tableauViz" style="display:none;">
-    <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-    <param name="embed_code_version" value="3" />
-    <param name="site_root" value="" />
-    <param name="name" value="Pet_17939993738590/FinalRedesign" />
-    <param name="tabs" value="no" />
-    <param name="toolbar" value="yes" />
-    <param name="static_image" value="https://public.tableau.com/static/images/Pe/Pet_17939993738590/FinalRedesign/1.png" />
-    <param name="animate_transition" value="yes" />
-    <param name="display_static_image" value="yes" />
-    <param name="display_spinner" value="yes" />
-    <param name="display_overlay" value="yes" />
-    <param name="display_count" value="yes" />
-    <param name="language" value="en-US" />
-  </object>
-</div>
+<div id="pet-viz-frame"
+     style="width:100%; max-width:1100px; margin:0 auto; position:relative; overflow:hidden;">
+  <div id="pet-viz-scaled"
+       style="position:absolute; top:0; left:0; width:1500px; height:1800px; transform-origin:top left;">
+    <iframe
+      title="Pet ownership across 22 countries and regions"
+      src="https://public.tableau.com/views/Pet_17939993738590/FinalRedesign?:showVizHome=no&amp;:embed=yes&amp;:tabs=no&amp;:toolbar=yes"
+      width="1500"
+      height="1800"
+      style="display:block; border:0; width:1500px; height:1800px; max-width:none;"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
 
-<script type="text/javascript">
-  var divElement = document.getElementById('viz1794361399055');
-  var vizElement = divElement.getElementsByTagName('object')[0];
+<script>
+(function () {
+  var frame = document.getElementById('pet-viz-frame');
+  var chart = document.getElementById('pet-viz-scaled');
 
-  divElement.style.width = '1500px';
-  vizElement.style.width = '1500px';
-  vizElement.style.height = '1800px';
+  function resizePetChart() {
+    var scale = Math.min(frame.clientWidth / 1500, 1);
+    chart.style.transform = 'scale(' + scale + ')';
+    frame.style.height = Math.ceil(1800 * scale) + 'px';
+  }
 
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  resizePetChart();
+  window.addEventListener('resize', resizePetChart);
+
+  if (window.ResizeObserver) {
+    var observer = new ResizeObserver(resizePetChart);
+    observer.observe(frame);
+  }
+})();
 </script>
 
 [Open the visualization on Tableau Public](https://public.tableau.com/views/Pet_17939993738590/FinalRedesign)
