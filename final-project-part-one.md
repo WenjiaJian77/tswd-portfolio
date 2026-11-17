@@ -1,42 +1,119 @@
 | [home page](https://wenjiajian77.github.io/tswd-portfolio/) | [data viz examples](dataviz-examples) | [critique by design](critique-by-design) | [final project I](final-project-part-one) | [final project II](final-project-part-two) | [final project III](final-project-part-three) |
 
 
-> Important note: this template includes major elements of Part I, but the instructions on Canvas are the authoritative source.  Make sure to read through the assignment page and review the rubric to confirm you have everything you need before submitting.  When done, delete these instructions before submitting.
+# Chasing a White Christmas: A Pittsburgh Perspective
 
 # Outline
-> Include a high-level summary of your project.  This should be a couple paragraphs that describe what you're interested in showing with your final project. 
- 
-Text here...
 
-> A project structure that outlines the major elements of your story.  Your Good Charts text talks about story structure in Chapter 8 - you should describe what you hope to achieve.  Make sure the outline is detailed enough that we can see how you anticipate your story unfolding.  You can incorporate your Story Arc from the in-class exercise along with your user stories and one sentence summary to make the topic even more clear. 
+### Project summary
 
-Text here...
+A white Christmas is a familiar holiday image, but how likely is it in Pittsburgh and could choosing a different destination improve the chances? This project uses NOAA’s 1991–2020 climate normals to explore the historical probability of at least one inch of snow on the ground on December 25. It focuses on Pittsburgh-area residents and students who are interested in a snowy holiday but may not know how much probabilities vary between destinations.
+
+The story moves from a comparison of selected cities to a broader geographic view, then returns to weather stations within 300 kilometers of Pittsburgh’s reference station. The goal is to help readers identify promising places to explore while setting realistic expectations. Higher historical probabilities do not guarantee snow in a particular year, and traveling farther does not necessarily lead to better odds. This project supports an initial destination shortlist rather than providing a weather forecast or a complete travel itinerary.
+
+### Audience and user story
+
+**Primary audience:** Pittsburgh-area residents and students considering a Christmas trip who have little background in climate statistics.
+
+**User story:** As someone planning a holiday trip from Pittsburgh, I want to compare the historical chances of a white Christmas at different locations so that I can identify destinations worth investigating.
+
+**One-sentence takeaway:** Choosing a destination can improve the historical odds of a white Christmas, and some nearby locations offer better odds than more distant alternatives.
+
+### Story structure
+
+**1. Establish the starting point: What are Pittsburgh’s chances?**
+
+Introduce the definition of a white Christmas: at least one inch of snow on the ground on December 25, which does not necessarily mean snow falls that day. Pittsburgh’s representative station has a historical probability of 30.6%.
+
+A horizontal bar chart compares eight selected cities, highlighting Pittsburgh as the baseline. These cities provide recognizable examples with different probabilities; they are not a comprehensive ranking of U.S. destinations.
+
+**2. Broaden the view: Where are higher probabilities found?**
+
+A station map of the contiguous United States reveals the geographic distribution behind the city comparisons. A sequential blue palette represents probabilities from low to high.
+
+Readers can explore individual stations through tooltips. The map also makes clear that a single city comparison cannot capture all the variation within a region. Unmarked areas indicate gaps in the displayed station coverage, not necessarily zero probability.
+
+**3. Return to the audience: What options are closer to Pittsburgh?**
+
+A scatterplot compares historical probability with straight-line distance from the Pittsburgh International Airport reference station, including valid stations within 300 kilometers.
+
+Four highlighted locations give the comparison a clear purpose:
+
+- **Pittsburgh:** the starting point and probability baseline.
+- **Cleveland:** a recognizable major-city comparison with a probability of 39.7%.
+- **Laurel Summit:** a nearby mountain-area station with a probability of approximately 66%, about 98 kilometers from the reference station.
+- **Titusville:** a station representing a smaller-city alternative, with a probability of approximately 64%, about 135 kilometers away.
+
+The Laurel Summit and Titusville stations are closer to the reference station than the Cleveland station and have higher historical probabilities. Other stations remain visible to provide context; the highlighted locations are illustrative examples, not a claim to identify the best destinations in the entire region.
+
+**4. Close with a practical takeaway**
+
+Encourage readers to consider specific locations rather than assuming that a longer trip guarantees better chances. Historical probabilities can inform an initial shortlist, while actual travel decisions also require weather forecasts, transportation information, and local conditions.
+
 
 ## Initial sketches
-> Post images of your anticipated data visualizations (sketches are fine). They should mimic aspects of your outline, and include elements of your story.  
 
-Text here...
+The following Tableau prototypes serve as my initial visual designs. They show the planned sequence, chart types, annotations, and key messages. I will refine their presentation and interaction based on audience feedback.
+
+### Prototype 1: A different destination changes your chances
+
+The sorted horizontal bars make city probabilities easy to compare. Pittsburgh is highlighted to help readers connect the comparison to their own starting point. Direct percentage labels reduce the effort needed to read exact values.
+
+![Horizontal bar chart comparing white Christmas probabilities for eight selected cities, with Pittsburgh highlighted.](christmas-city-comparison.png)
+
+### Prototype 2: Where is a white Christmas more likely?
+
+The map expands the story from selected cities to stations across the contiguous United States. Equal-sized points use a light-to-dark blue scale to encode probability, while tooltips provide station-level details.
+
+![Map of weather stations across the contiguous United States, colored by historical white Christmas probability.](christmas-us-map.png)
+
+### Prototype 3: Higher odds do not always require a longer trip
+
+The scatterplot introduces distance as a new consideration. A horizontal reference line marks Pittsburgh’s 30.6% probability. Selected labels draw attention to meaningful comparisons while the remaining stations preserve the broader context.
+
+![Scatterplot of white Christmas probability against distance from Pittsburgh, highlighting Pittsburgh, Cleveland, Laurel Summit, and Titusville.](christmas-nearby-stations.png)
+
 
 # The data
-> A couple of paragraphs that document your data source(s), and an explanation of how you plan on using your data. 
 
-Text here...
+The primary source is NOAA’s National Centers for Environmental Information (NCEI), specifically the **Christmas Day Snow Statistics** spreadsheet based on the **1991–2020 U.S. Climate Normals**. I have downloaded the original workbook and prepared a working Excel file for Tableau. The source includes station identifiers, station names, states, latitude, longitude, elevation, and the probability of snow depth reaching at least one inch on December 25.
 
-> A link to the publicly-accessible datasets you plan on using, or a link to a copy of the data you've uploaded to your Github repository, Box account or other publicly-accessible location. Using a datasource that is already publicly accessible is highly encouraged.  If you anticipate using a data source other than something that would be publicly available please talk to me first. 
+Data preparation included removing introductory rows from the analytical tables, standardizing field names, converting probabilities to a 0–1 scale for Tableau percentage formatting, and treating the source’s `-9999` insufficient-data code as missing rather than zero. Separate tables support the selected-city comparison and the broader station analysis. Station identifiers preserve the connection between displayed locations and their underlying observations.
+
+For the distance scatterplot, I calculated straight-line distances using station coordinates and Tableau’s spatial functions. The origin is the Pittsburgh International Airport reference station, rather than Pittsburgh’s city center. The 300-kilometer radius defines the scope of this local comparison; it does not represent a driving-distance limit or a day-trip travel time.
+
+### Interpretation and limitations
+
+- Probabilities describe historical climate conditions, not forecasts for an upcoming Christmas.
+- Snow already on the ground qualifies; fresh snowfall on December 25 is not required.
+- City values come from individual representative stations, not citywide averages.
+- Stations are unevenly distributed, so the map does not provide complete spatial coverage.
+- Straight-line distance does not account for roads, travel time, transportation availability, or cost.
+- These data do not establish why one station has a higher probability than another.
+
+### Data access
 
 | Name | URL | Description |
 |------|-----|-------------|
-|      |     |             |
-|      |     |             |
-|      |     |             |
+| Christmas Day Snow Statistics spreadsheet | [NOAA downloadable dataset](https://www.ncei.noaa.gov/media/3501) | Public download page for the original station-level Excel workbook used in this project. |
+| U.S. Climate Normals | [NOAA dataset documentation](https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals) | Background on the climate normals underlying the probability estimates. |
+| White Christmas overview | [NOAA explanatory article](https://www.ncei.noaa.gov/news/white-christmas) | Explanation of the white Christmas definition, map, and interpretation of historical probabilities. |
+
 
 # Method and medium
-> In a few sentences, you should document how you plan on completing your final project. 
 
-Text here...
+I am using Tableau to build the three interactive visualizations and Tableau Public to host them. The final presentation will be a standalone narrative on GitHub Pages, combining short explanatory passages with embedded visualizations. The page will guide readers through the story in sequence while allowing them to explore station details through tooltips.
+
+I will use consistent typography, percentage formatting, and a recurring Pittsburgh highlight across the charts. Sources and interpretation notes will accompany each visualization. Audience testing will focus on whether readers understand the probability definition, distinguish straight-line distance from travel distance, and recognize why the selected locations are highlighted.
+
 
 ## References
-_List any references you used here._
+
+- NOAA National Centers for Environmental Information. *Christmas Day Snow Statistics, 1991–2020*. [Dataset download page](https://www.ncei.noaa.gov/media/3501).
+- NOAA National Centers for Environmental Information. *U.S. Climate Normals*. [Dataset documentation](https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals).
+- NOAA National Centers for Environmental Information. *Are You Dreaming of a White Christmas?* [Article](https://www.ncei.noaa.gov/news/white-christmas).
+- Tableau. *Spatial Functions*. [Documentation](https://help.tableau.com/current/pro/desktop/en-us/functions_functions_spatial.htm).
+
 
 ## AI acknowledgements
 _If you used AI to help you complete this assignment (within the parameters of the instruction and course guidelines), detail your use of AI for this assignment here._
