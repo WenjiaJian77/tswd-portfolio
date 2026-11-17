@@ -21,11 +21,9 @@ The story moves from a comparison of selected cities to a broader geographic vie
 
 ### Scope and selection decisions
 
-**Why 1991–2020?** This period comes from NOAA’s published climate normals dataset; I did not choose the endpoints to emphasize a particular result. Using one common reference period keeps the station comparisons consistent. The project examines geographic differences in historical probabilities, not changes over time, and does not estimate the probability for an upcoming Christmas.
-
 **Why these eight cities?** The bar chart uses a purposive set of recognizable destinations rather than a representative sample or a “best destinations” ranking. Pittsburgh provides the audience’s baseline. Cleveland and Erie introduce nearby alternatives; Buffalo and Syracuse extend the comparison to western and central New York; Burlington and Minneapolis provide higher-probability northern examples; and New York City provides a familiar lower-probability contrast. This selection illustrates the range of outcomes, but it cannot establish which destination is best nationwide.
 
-**Why a national map and a local scatterplot?** The contiguous-U.S. map supplies geographic context that eight cities cannot provide. The local scatterplot then narrows the question to places closer to the audience. Alaska and Hawaii are outside the map’s displayed scope, so its title explicitly identifies the contiguous United States.
+**Why a national map and a local scatterplot?** The contiguous-U.S. map supplies geographic context that eight cities cannot provide. The local scatterplot then narrows the question to places closer to the audience.
 
 **Why 300 kilometers?** I chose a 300-kilometer straight-line radius as an exploratory boundary for nearby alternatives. It includes multiple directions and locations beyond Pennsylvania while keeping the analysis centered on Pittsburgh. It is not a data-derived optimum, a driving-distance limit, or a guarantee that a destination is convenient to reach. A different radius would change the set of stations included.
 
@@ -54,7 +52,7 @@ Four highlighted locations give the comparison a clear purpose:
 - **Laurel Summit:** a nearby mountain-area station with a probability of approximately 66%, about 98 kilometers from the reference station.
 - **Titusville:** a station representing a smaller-city alternative, with a probability of approximately 64%, about 135 kilometers away.
 
-The Laurel Summit and Titusville stations are closer to the reference station than the Cleveland station and have higher historical probabilities. Other stations remain visible to provide context; the highlighted locations are illustrative examples, not a claim to identify the best destinations in the entire region.
+The Laurel Summit and Titusville stations are closer to the reference station than the Cleveland station and have higher historical probabilities.
 
 **4. Close with a practical takeaway**
 
@@ -69,19 +67,19 @@ The following Tableau prototypes serve as my initial visual designs. They show t
 
 The comparison shows that familiar destinations offer substantially different historical odds: Pittsburgh’s representative station is at 30.6%, compared with 73.6% for Minneapolis and 13.2% for New York City. The Minneapolis–Pittsburgh difference is 43.0 percentage points. This establishes that destination choice matters before the story turns to geographic patterns and nearby options.
 
-I chose horizontal bars because the main task is to compare eight named locations precisely. All bars begin at zero, and the axis extends to 100% to preserve the probability scale. Descending order makes the differences easy to scan without presenting the cities as a comprehensive destination ranking. Pittsburgh uses dark blue while the other cities use light blue, keeping the audience’s starting point visible. One-decimal percentage labels provide exact values.
+I chose horizontal bars because the main task is to compare eight named locations precisely.Pittsburgh uses dark blue while the other cities use light blue, keeping the audience’s starting point visible. 
 
-A map would show the locations more effectively but would make small probability differences harder to compare. I therefore reserve the map for the next question. I also removed an initial vertical Pittsburgh reference line because the highlighted Pittsburgh bar and its percentage already supplied that baseline.
+A map would show the locations more effectively but would make small probability differences harder to compare. I therefore reserve the map for the next question.
 
 ![Horizontal bar chart comparing white Christmas probabilities for eight selected cities, with Pittsburgh highlighted.](01_City_Comparison.png)
 
 ### Prototype 2: Where is a white Christmas more likely?
 
-The map reveals a pattern that the city chart alone cannot show: higher probabilities appear across many northern stations and parts of the mountainous West, while many southern stations have low probabilities. This suggests that readers should examine specific locations rather than treating all places within a broad region as equivalent. The map describes these patterns without establishing their causes.
+The map reveals a pattern that the city chart alone cannot show: higher probabilities appear across many northern stations and parts of the mountainous West, while many southern stations have low probabilities. This suggests that readers should examine specific locations rather than treating all places within a broad region as equivalent.
 
-Each equal-sized circle represents one weather station at its recorded coordinates. A sequential light-to-dark blue scale encodes probability from 0% to 100%; darker blue means a higher probability. I chose a sequential scale because probability has a natural low-to-high order and no meaningful midpoint requiring a diverging palette. Keeping point sizes equal avoids encoding the same measure twice.
+Each equal-sized circle represents one weather station at its recorded coordinates. A sequential light-to-dark blue scale encodes probability from 0% to 100%; darker blue means a higher probability. I chose a sequential scale because probability has a natural low-to-high order and no meaningful midpoint requiring a diverging palette.
 
-I use station symbols rather than filled states because the data describe individual stations, not statewide averages. A filled-state map would imply a level of geographic aggregation that I have not calculated. I reduced the point size after the initial version produced excessive overlap and removed persistent station labels to preserve the national pattern; readers can retrieve names and values through tooltips. Blank areas are explicitly identified as gaps in displayed coverage rather than zero probability.
+I use station symbols rather than filled states because the data describe individual stations, not statewide averages. I reduced the point size after the initial version produced excessive overlap and removed persistent station labels to preserve the national pattern; readers can retrieve names and values through tooltips. Blank areas are explicitly identified as gaps in displayed coverage rather than zero probability.
 
 ![Map of weather stations across the contiguous United States, colored by historical white Christmas probability.](02_US_Probability_Map.png)
 
@@ -91,9 +89,7 @@ This chart challenges the assumption that traveling farther necessarily improves
 
 The scatterplot places straight-line distance on the horizontal axis and historical probability on the vertical axis. Unlike a sorted bar chart, it lets readers compare both considerations simultaneously. A dashed horizontal line at 30.6% identifies stations above or below Pittsburgh’s baseline. All valid stations within the selected radius remain visible as muted gray points, so the highlighted examples do not replace the broader distribution.
 
-The four highlighted locations have distinct roles: Pittsburgh is the baseline, Cleveland is a recognizable major-city comparison, Laurel Summit is a nearby mountain-area example, and Titusville is a smaller-city example. Orange links Laurel Summit and Titusville as the two alternatives central to the comparison, while Pittsburgh and Cleveland have separate colors and direct labels. These are illustrative cases, not the result of a comprehensive destination-optimization exercise.
-
-I do not add a fitted line because the intended task is to compare specific alternatives and the wide variation among stations at similar distances. A single trend line would not identify which locations offer the relevant trade-offs. Tooltips preserve full station names, and the caption clarifies that the horizontal axis measures straight-line distance from the Pittsburgh International Airport reference station, not road distance from downtown.
+The four highlighted locations have distinct roles: Pittsburgh is the baseline, Cleveland is a recognizable major-city comparison, Laurel Summit is a nearby mountain-area example, and Titusville is a smaller-city example. Orange links Laurel Summit and Titusville as the two alternatives central to the comparison, while Pittsburgh and Cleveland have separate colors and direct labels.
 
 ![Scatterplot of white Christmas probability against distance from Pittsburgh, highlighting Pittsburgh, Cleveland, Laurel Summit, and Titusville.](03_Distance_from_Pittsburgh.png)
 
@@ -102,8 +98,6 @@ I do not add a fitted line because the intended task is to compare specific alte
 The main design challenge was making each visualization answer a different question. My initial set included a city bar chart, a map of the same eight cities, and a stacked chart showing the probability of a white Christmas alongside its complement. Although the formats differed, they largely repeated the same information. I expanded the map to the contiguous United States and replaced the complementary-probability chart with a distance comparison.
 
 I also explored elevation-versus-probability scatterplots for Colorado and Pennsylvania. Colorado offered a visually clear relationship, but it shifted the story away from the Pittsburgh audience. Pennsylvania was more locally relevant, yet elevation still answered a geographic question more directly than a travel-planning question. I ultimately selected distance because it connects the third visualization to the audience’s decision while adding information absent from the first two charts.
-
-The highlighted locations also changed during development. Erie and Cleveland initially carried over from the city comparison. I later retained Cleveland as a recognizable major-city reference and selected Laurel Summit and Titusville to demonstrate closer, higher-probability alternatives. Erie remained in the background because its role was less distinct within this final comparison. This revision made the highlights serve the story rather than simply repeat familiar labels.
 
 # The data
 
@@ -133,9 +127,7 @@ For the distance scatterplot, I calculated straight-line distances using station
 
 # Method and medium
 
-I am using Tableau to build the three interactive visualizations and Tableau Public to host them. The final presentation will be a standalone narrative on GitHub Pages, combining short explanatory passages with embedded visualizations. The page will guide readers through the story in sequence while allowing them to explore station details through tooltips.
-
-I will use consistent typography, percentage formatting, and a recurring Pittsburgh highlight across the charts. Sources and interpretation notes will accompany each visualization. For audience testing, I plan to ask Pittsburgh-area readers to complete three tasks: identify how Pittsburgh compares with a selected city, explain what a dark-blue map point represents, and find a highlighted location that is closer than Cleveland but has a higher historical probability. I will also ask whether they interpret the distances as driving distances and the probabilities as forecasts. Their answers will help me assess whether the labels, captions, and story sequence communicate the intended message without additional explanation.
+I am using Tableau to build the three interactive visualizations and Tableau Public to host them. I will use consistent typography, percentage formatting, and a recurring Pittsburgh highlight across the charts. Sources and interpretation notes will accompany each visualization. For audience testing, I plan to ask Pittsburgh-area readers to complete three tasks: identify how Pittsburgh compares with a selected city, explain what a dark-blue map point represents, and find a highlighted location that is closer than Cleveland but has a higher historical probability. Their answers will help me assess whether the labels, captions, and story sequence communicate the intended message without additional explanation.
 
 
 ## References
@@ -143,8 +135,8 @@ I will use consistent typography, percentage formatting, and a recurring Pittsbu
 - NOAA National Centers for Environmental Information. *Christmas Day Snow Statistics, 1991–2020*. [Dataset download page](https://www.ncei.noaa.gov/media/3501).
 - NOAA National Centers for Environmental Information. *U.S. Climate Normals*. [Dataset documentation](https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals).
 - NOAA National Centers for Environmental Information. *Are You Dreaming of a White Christmas?* [Article](https://www.ncei.noaa.gov/news/white-christmas).
-- Tableau. *Spatial Functions*. [Documentation](https://help.tableau.com/current/pro/desktop/en-us/functions_functions_spatial.htm).
 
 
 ## AI acknowledgements
-_If you used AI to help you complete this assignment (within the parameters of the instruction and course guidelines), detail your use of AI for this assignment here._
+
+I used ChatGPT to  draft the text for this page.
