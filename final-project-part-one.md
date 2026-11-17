@@ -59,19 +59,19 @@ The following Tableau prototypes serve as my initial visual designs. They show t
 
 The sorted horizontal bars make city probabilities easy to compare. Pittsburgh is highlighted to help readers connect the comparison to their own starting point. Direct percentage labels reduce the effort needed to read exact values.
 
-![Horizontal bar chart comparing white Christmas probabilities for eight selected cities, with Pittsburgh highlighted.](christmas-city-comparison.png)
+![Horizontal bar chart comparing white Christmas probabilities for eight selected cities, with Pittsburgh highlighted.](01_City_Comparison.png)
 
 ### Prototype 2: Where is a white Christmas more likely?
 
 The map expands the story from selected cities to stations across the contiguous United States. Equal-sized points use a light-to-dark blue scale to encode probability, while tooltips provide station-level details.
 
-![Map of weather stations across the contiguous United States, colored by historical white Christmas probability.](christmas-us-map.png)
+![Map of weather stations across the contiguous United States, colored by historical white Christmas probability.](02_US_Probability_Map.png)
 
 ### Prototype 3: Higher odds do not always require a longer trip
 
 The scatterplot introduces distance as a new consideration. A horizontal reference line marks Pittsburgh’s 30.6% probability. Selected labels draw attention to meaningful comparisons while the remaining stations preserve the broader context.
 
-![Scatterplot of white Christmas probability against distance from Pittsburgh, highlighting Pittsburgh, Cleveland, Laurel Summit, and Titusville.](christmas-nearby-stations.png)
+![Scatterplot of white Christmas probability against distance from Pittsburgh, highlighting Pittsburgh, Cleveland, Laurel Summit, and Titusville.](03_Distance_from_Pittsburgh.png)
 
 
 # The data
