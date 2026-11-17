@@ -127,7 +127,7 @@ For the distance scatterplot, I calculated straight-line distances using station
 
 # Method and medium
 
-I am using Tableau to build the three interactive visualizations and Tableau Public to host them. I will use consistent typography, percentage formatting, and a recurring Pittsburgh highlight across the charts. Sources and interpretation notes will accompany each visualization. For audience testing, I plan to ask Pittsburgh-area readers to complete three tasks: identify how Pittsburgh compares with a selected city, explain what a dark-blue map point represents, and find a highlighted location that is closer than Cleveland but has a higher historical probability. Their answers will help me assess whether the labels, captions, and story sequence communicate the intended message without additional explanation.
+I am using Tableau to build the three interactive visualizations and Tableau Public to host them. I will use consistent typography, percentage formatting, and a recurring Pittsburgh highlight across the charts. Sources and interpretation notes will accompany each visualization.
 
 
 ## References
