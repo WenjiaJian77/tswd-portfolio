@@ -155,13 +155,12 @@ Text here!
 
 Text here!
 
-# Moodboards / personas
-> If you did this optional part, include details here.  Otherwise remove this section
-
-Text here!
-
 ## References
-_List any references you used here._
+
+- NOAA National Centers for Environmental Information. *Christmas Day Snow Statistics, 1991–2020*. [Dataset download page](https://www.ncei.noaa.gov/media/3501).
+- NOAA National Centers for Environmental Information. *U.S. Climate Normals*. [Dataset documentation](https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals).
+- NOAA National Centers for Environmental Information. *Are You Dreaming of a White Christmas?* [Explanatory article](https://www.ncei.noaa.gov/news/white-christmas).
+- Tableau. *Spatial Functions*. [Documentation](https://help.tableau.com/current/pro/desktop/en-us/functions_functions_spatial.htm).
 
 ## AI acknowledgements
 _If you used AI to help you complete this assignment (within the parameters of the instruction and course guidelines), detail your use of AI for this assignment here._
