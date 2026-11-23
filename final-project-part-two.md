@@ -108,22 +108,15 @@ Pittsburgh-area residents and students who enjoy snow and are interested in a Ch
 ## Interview script
 > List the goals from your research, and the questions you intend to ask. 
 
-The research will examine whether readers understand the main message, interpret the three charts accurately, and find the story relevant and motivating. It will also test whether the invitation to explore feels credible without suggesting that snow is guaranteed. Participants will view the same draft on a laptop and read it in the intended order. I will invite them to think aloud and observe where they pause, reread, or need help. I will let them answer before explaining the charts, so that my guidance does not hide problems in the draft.
+The goal is to understand whether readers grasp the story’s message, find the charts and writing clear, and feel the content is relevant to them.
 
 | Goal | Questions to ask |
 |------|------------------|
-| Q1. Understand the participant’s context | What would you consider when deciding whether to take a winter outing from Pittsburgh? How interested are you in finding a snowy destination? |
-| Q2. Test the opening and audience connection | After reading the opening, who do you think this story is for? What do you expect the rest of the page to help you do? |
-| Q3. Check understanding of “white Christmas” | In your own words, what counts as a white Christmas in this story? Would snow left on the ground from an earlier day qualify? |
-| Q4. Test the map’s visual encoding | Choose a dark-blue point and a light-blue point. What does their color difference tell you? What, if anything, would you conclude about an area with no dots? |
-| Q5. Test the city comparison | How does Pittsburgh compare with Cleveland and Minneapolis? What does this chart make you consider about choosing a destination? |
-| Q6. Test the scatterplot without leading the answer | What do the horizontal and vertical positions of a dot mean? Find a highlighted location that is closer than Cleveland and has a higher probability. Show me how you reached your answer. |
-| Q7. Check distance and baseline interpretation | What does the dashed line represent? If a point is about 100 kilometers away, what does that distance mean, and what would you still need to know to plan a trip? |
-| Q8. Check interpretation of uncertainty | How would you explain Laurel Summit’s roughly 66% probability to a friend? What can this number tell you about this coming Christmas, and what can it not tell you? |
-| Q9. Evaluate the highlights and credibility | Why do you think Pittsburgh, Cleveland, Laurel Summit, and Titusville are highlighted? Is any choice unclear or unconvincing? What information would help? |
-| Q10. Evaluate the story’s sequence and presentation | Where, if anywhere, did you lose the thread, reread something, or struggle to read a chart? Please point to a specific sentence, label, color, or other element. |
-| Q11. Test the takeaway and call to action | What is the main message you would take away? After reading, what—if anything—would you do next? Did any wording feel inviting, exaggerated, or too much like an advertisement? |
-| Q12. Identify the most useful improvement | What one change would make this story more useful to you? What information is still missing before you could consider one of these places? |
+| Understand the main takeaway | In your own words, what is this story trying to communicate? What do you think it wants readers to understand? |
+| Assess chart clarity | Was anything in the three charts difficult to understand or in need of further explanation? If so, please point it out. |
+| Evaluate the writing | How did the text feel to read? Were any parts too long, awkward, repetitive, or unclear? |
+| Assess the story’s flow | Did the sections connect naturally, or did any transition feel abrupt? Was there anything you wanted to know that the story did not address? |
+| Evaluate relevance and motivation | After reading, how has your interest in exploring a white Christmas destination changed? What made the story feel useful or unconvincing to you? |
 
 For each session, I will record:
 
