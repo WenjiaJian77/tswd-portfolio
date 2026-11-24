@@ -1,11 +1,12 @@
 | [home page](https://wenjiajian77.github.io/tswd-portfolio/)  | [data viz examples](dataviz-examples) | [critique by design](critique-by-design) | [final project I](final-project-part-one) | [final project II](final-project-part-two) | [final project III](final-project-part-three) |
 
 # Wireframes / storyboards
-> Using your sketches developed last week, further develop your story outline and relevant components visually through the use of wireframing / storyboards. Using your outline as a guide, include high-fidelity, individual draft data visualizations of the critical elements of your story you want to share with your reader. Note: you can build these elements out directly in Shorthand this week if you wish.  Reminder: this template is intended to help, but it doesn't substitute for reading through the full homework assignment!  The assignment page on Canvas includes many important details for completing Part II of the final project. 
 
-The draft below presents the intended reading sequence: a personal invitation, a national view, a comparison of selected cities, and nearby alternatives to Pittsburgh. The three Tableau visualizations provide the main evidence. Short passages connect their findings to the reader’s decision about where to look for a white Christmas.
+## View the Interactive Story
 
----
+**[👉 Open “Find Your White Christmas” on Shorthand](https://carnegiemellon.shorthandstories.com/find-your-white-christmas/index.html)**
+
+Please start with the Shorthand story above to explore the narrative and interactive visualizations.
 
 ## Your White Christmas Might Be Closer Than You Think
 
@@ -101,12 +102,10 @@ Use these historical odds to choose a place worth exploring. As Christmas approa
 # User research 
 
 ## Target audience
-> Include your approach to identifying representative individuals, and who you hope to reach with your story. 
 
 Pittsburgh-area students and residents who enjoy snow and are interested in a Christmas outing or trip. The story helps them explore destinations with higher historical chances of a white Christmas, especially options closer to home. No background in climate statistics or data visualization is required.
 
 ## Interview script
-> List the goals from your research, and the questions you intend to ask. 
 
 The goal is to understand whether readers grasp the story’s message, find the charts and writing clear, and feel the content is relevant to them.
 
@@ -127,33 +126,32 @@ For each session, I will record:
 
 
 ## Interview findings
-> Detail the findings from your interviews.  Do not include PII.  Capture specific insights where possible.
 
-Text here!
+I interviewed three graduate students after they reviewed the draft story.
 
-| Questions               | Interview 1 (briefly describe) | Interview 2 | Interview 3 |
-|-------------------------|--------------------------------|-------------|-------------|
-| Question you asked here | Insightful feedback            |             |             |
-|                         |                                |             |             |
-|                         |                                |             |             |
+| Interview question | Participant 1: Second-year MISM student | Participant 2: First-year MISM student | Participant 3: First-year BIDA student |
+|--------------------|----------------------------------------|---------------------------------------|--------------------------------------|
+| What is the story trying to communicate? | Understood the overall message, although the third chart’s specific takeaway was less clear. | Same. | Same. |
+| Was anything in the charts unclear? | Suggested a more direct title for the distance scatterplot and reconsidering which points receive colored highlights. | Wanted the city-comparison title to be more explicit and an explanation of why these eight cities were selected. Suggested placing explanatory notes inside unused chart space. | Nothing to add. |
+| How did the writing feel to read? | Nothing to add. | Suggested moving some chart-specific explanations into the graphics so readers would not have to rely on the surrounding paragraphs. | Responded positively to the opening and how it introduced the story. |
+| Did the sections connect naturally? | Felt that the sections connected well. | Same. | Same. |
+| How effective was the invitation to explore a white Christmas destination? | Nothing to add. | Nothing to add. | Felt that the closing call to action was not prominent or explicit enough. |
 
+The clearest shared concern was that the charts needed to communicate their purpose more independently: Participant 1 questioned the scatterplot’s message, while Participant 2 questioned the city comparison’s framing and selection. The positive feedback on the introduction and transitions suggests retaining the overall narrative sequence while refining individual charts.
 
 # Identified changes for Part III
-> Document the changes you plan on implementing next week to address any issues identified.  
 
-Text here!
+I will retain the progression from the national map to selected cities and then nearby alternatives. Revisions will focus on making each chart’s takeaway explicit and turning the ending into a clear next step.
 
-| Research synthesis                       | Anticipated changes for Part III                                                |
-|------------------------------------------|---------------------------------------------------------------------------------|
-| Findings or observations from interviews | Describe what, if any changes you anticipate making to address the observation. |
-|                                          |                                                                                 |
-|                                          |                                                                                 |
-|                                          |                                                                                 |
-| ...add more rows as necessary            |                                                                                 |
+| Research synthesis | Planned change and design reasoning |
+|--------------------|------------------------------------|
+| The scatterplot’s takeaway was unclear.| Replace its title with **“Closer than Cleveland, with higher snow chances.”** Use the subtitle **“Laurel Summit and Titusville have higher historical white Christmas probabilities and shorter straight-line distances from Pittsburgh’s reference station than Cleveland’s station.”** This names the comparison directly instead of asking readers to infer what “a longer trip” means. |
+| The highlighted points need clearer roles. | Retain four highlights, each with a distinct purpose: **Pittsburgh** as the starting baseline, **Cleveland** as a familiar city comparison, and **Laurel Summit and Titusville** as selected closer alternatives with higher probabilities. Use dark blue for Pittsburgh, muted green for Cleveland, orange for the two alternatives, and light gray for other stations. Explain these roles in the legend and retain direct place labels. Present the orange points as examples, not the best or only options within 300 km. |
+| The reason for selecting eight cities was unclear. | Change the title to **“How do eight destinations compare?”** Add the subtitle **“Pittsburgh alongside selected nearby cities and farther-away holiday possibilities.”** Add a short chart note: **“Selected examples, not a ranking of all U.S. cities. Each city is represented by one weather station.”** Explain in the adjacent paragraph that Cleveland and Erie provide nearby comparisons, Buffalo and Syracuse extend the regional comparison, Burlington and Minneapolis illustrate farther options with higher probabilities, and New York City provides a lower-probability contrast. |
+| Important explanations were too dependent on surrounding prose. | Add one concise annotation to each comparison chart. On the bar chart, place **“Minneapolis: 43 percentage points above Pittsburgh”** near its bar. On the scatterplot, label the orange points with their approximate values: **“Laurel Summit: 98 km · 66%”** and **“Titusville: 135 km · 64%.”** Position the labels in nearby open space without covering marks. Keep the straight-line-distance qualification visible on the axis and retain source details in the caption. Remove duplicated sentences from the surrounding text. |
+| The ending did not give a sufficiently clear invitation. | End with a distinct section titled **“Make a Snow Day of It.”** Use the closing text: **“Pick a place that catches your eye, invite a friend, and make a plan to explore. Use these historical probabilities to build your shortlist, then check the local forecast, snow conditions, and your route before heading out. Your white Christmas adventure can start in Pittsburgh.”** Give this paragraph more visual emphasis through spacing and a contrasting background. Keep the reminder that historical probabilities do not guarantee this year’s conditions. |
 
-> ...include any final thoughts you have here. 
-
-Text here!
+I will first revise the titles and selection explanations, then adjust annotations and highlight colors, and finally strengthen the closing section. In the Shorthand preview, I will check whether these additions remain readable in the two-column layout without overlapping labels or clipping captions.
 
 ## References
 
