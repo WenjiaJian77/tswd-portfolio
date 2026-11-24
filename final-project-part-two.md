@@ -103,7 +103,7 @@ Use these historical odds to choose a place worth exploring. As Christmas approa
 ## Target audience
 > Include your approach to identifying representative individuals, and who you hope to reach with your story. 
 
-Pittsburgh-area residents and students who enjoy snow and are interested in a Christmas outing or trip. The story helps them explore destinations with higher historical chances of a white Christmas, especially options closer to home. No background in climate statistics or data visualization is required.
+Pittsburgh-area students and residents who enjoy snow and are interested in a Christmas outing or trip. The story helps them explore destinations with higher historical chances of a white Christmas, especially options closer to home. No background in climate statistics or data visualization is required.
 
 ## Interview script
 > List the goals from your research, and the questions you intend to ask. 
