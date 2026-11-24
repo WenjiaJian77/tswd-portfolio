@@ -161,5 +161,4 @@ I will first revise the titles and selection explanations, then adjust annotatio
 - Tableau. *Spatial Functions*. [Documentation](https://help.tableau.com/current/pro/desktop/en-us/functions_functions_spatial.htm).
 
 ## AI acknowledgements
-_If you used AI to help you complete this assignment (within the parameters of the instruction and course guidelines), detail your use of AI for this assignment here._
-
+I used GhatGPT to help me organize the responses provided by the respondents, which is the user research table. Furthermore, since I had never used the shorthand platform before, I asked GPT to provide me with some operational assistance. For instance, it offered guidance on how to adjust the HTML code pasted onto Tableau to make the chart size fit the window size.
